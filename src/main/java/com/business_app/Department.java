@@ -3,6 +3,7 @@ package com.business_app;
 import com.business_app.Employee;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Department {
 
@@ -67,5 +68,16 @@ public class Department {
             totalSalary = totalSalary + employee.getSalary();
         }
         return totalSalary;
+    }
+
+    public void listEmployees() {
+        if (employees.isEmpty()) {
+            System.out.println("No employees in " + name + ".");
+        } else {
+            System.out.println("Employees in " + name + ":");
+            for (Employee employee : employees) {
+                System.out.println(employee);
+            }
+        }
     }
 }

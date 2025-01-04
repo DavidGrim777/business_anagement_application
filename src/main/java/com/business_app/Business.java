@@ -2,11 +2,13 @@ package com.business_app;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 
 public class Business {
 
     private String name;
     private HashMap<String, Department> departments;
+    private List<Employee> employees;
 
     public Business(String name) {
         this.name = name;
